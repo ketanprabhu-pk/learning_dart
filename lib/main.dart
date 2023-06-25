@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+String GetFullName(String fn, String ln) {
+  return "$fn $ln";
+}
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,6 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print(GetFullName("fn", "ln"));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
